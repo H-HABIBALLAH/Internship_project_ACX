@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUIVI DES TRAVAUX ACX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+</head>
+
+<body>
+    <template id="addOrModify">
+        <div id="addOrModifyRow">
+            <button id="addButton">
+                <span id="plus">+</span>
+            </button>
+            <button id="modifyButton">
+                <span id="modify"><img src="pencil.png" alt=""></span>
+            </button>
+        </div>
+    </template>
+
+    <template id="validateOrCancel">
+        <div id="validateOrCancelRow">
+            <button id="validateButton">
+                <span id="validate">✓</span>
+            </button>
+            <button id="cancelButton">
+                <span id="cancel">✗</span>
+            </button>
+        </div>
+    </template>
+    <script src="script.js"></script>
+    <div class="container-fluid">
+        <div class="row" id="header">
+            <div class="col-1">
+                <a href="https://www.ocpgroup.ma/" target="_blanck">
+                    <img src="image001.png" alt="Logo OCP" id="LogoOCP">
+                </a>
+            </div>
+            <div class="col-11">
+                <div id="title">SUIVI DES TRAVAUX ACX SEMAINE
+                    <input type="text" id="semaineInput" style="width: 60px">
+                    <button class="btn btn-secondary semaineBtn">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table" id="myTable">
+        <thead class="thead-dark">
+            <tr id="tableHead">
+                <td class="DI">DI</td>
+                <td class="Date-de-lancement-DI">Date de lancement DI</td>
+                <td class="Code-Service-Demandeur">Code Service Demandeur</td>
+                <td class="OT">OT</td>
+                <td class="Date-de-lancement-OT">Date de lancement OT</td>
+                <td class="Description-de-travail">Description de travail</td>
+                <td class="Nature-de-travail">Nature de travail</td>
+                <td class="Statut-de-travail">Statut de travail</td>
+                <td class="Date-de-fin-des-travaux">Date de fin des travaux</td>
+                <td class="Sections-intervenantes">Sections intervenantes</td>
+            </tr>
+        </thead>
+        <tbody id="myTableBody">
+
+        </tbody>
+    </table>
+    <div class="container-fluid d-none" id="clé" >
+        <div class="row mx-auto mb-3">
+            <div class="col-3 border">
+                <div class="row mb-3 mt-2">
+                    <div class="col ml-3" style="background-color: #ffc93c;"></div>
+                    <div class="col-9">MG</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #e5df88;"></div>
+                    <div class="col-9">Extraction</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #a6dcef;"></div>
+                    <div class="col-9">Beneficiation</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #dcd6f7;"></div>
+                    <div class="col-9">Pipeline et down stream</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #bfdcae;"></div>
+                    <div class="col-9">Safi</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #e8ded2;"></div>
+                    <div class="col-9">Jorf</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col ml-3" style="background-color: #ff9a76;"></div>
+                    <div class="col-9">Benguerir</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
